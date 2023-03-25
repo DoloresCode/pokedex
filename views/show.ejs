@@ -1,0 +1,18 @@
+<%- include('./header.ejs', {name: pokemon.name}) %>
+<h1>>It's <%= pokemon.name %>!</h1>
+<br>
+<img src="<%= pokemon.img %>">
+<h2> Category(ies):</h2>
+    <ul>
+        <% for(let i = 0; i < pokemon.length; i++) { %>
+            <li><%= pokemon.category[i] %></li>
+        <% } %>
+    </ul>
+<h2>Statistics:</h2>
+<p>HP: <%= pokemon.stats.hp %></p>
+<p> Attack: <%= pokemon.stats.attack %></p>
+<p> Defense:<%= pokemon.stats.defense %></p>
+
+<a href="/pokemon"><h3>Go back to the main list</h3></a>
+</body>
+</html>

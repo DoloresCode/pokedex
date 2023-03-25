@@ -1,0 +1,48 @@
+<%- include('./header.ejs', {name: 'Create a new Pokemon'})%>
+<body>
+    <h1>Create a New Pokemon</h1>
+    <h2>Enter Data about your new Pokemon!</h2>
+    <form method="POST" action="/pokemon">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="img">Image URL:</label>
+            <input type="text" name="img" id="img">
+        </div>
+        <div class="form-group">
+            <label for="type">Type:</label>
+            <input type="text" name="type" id="type">
+        </div>
+        <div class="form-group">
+            <label for="hp">HP:</label>
+            <input type="text" name="hp" id="hp">
+        </div>
+        <div class="form-group">
+            <label for="attack">Attack:</label>
+            <input type="text" name="attack" id="attack">
+        </div>
+        <div class="form-group">
+            <label for="defense">Defense:</label>
+            <input type="text" name="defense" id="defense">
+        </div>
+        <div class="form-group">
+            <label for="spattack">Special Attack:</label>
+            <input type="text" name="spattack" id="spattack">
+        </div>
+        <div class="form-group">
+            <label for="spdefense">Special Defense:</label>
+            <input type="text" name="spdefense" id="spdefense">
+        </div>
+        <div class="form-group">
+            <label for="speed">Speed:</label>
+            <input type="text" name="speed" id="speed">
+        </div>
+        <div>
+            <input type="submit" value="Add a Pokemon">
+            <a href="/pokemon" class="pokemon-tracker-btn">Go to Pokemon Tracker</a>
+        </div>
+    </form>
+</body>
+</html>
